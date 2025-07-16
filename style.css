@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --background: #000000;
+  --background-color: #c9f31d;
+  --color: #ffffff;
+}
+body {
+  background-color: var(--background);
+  font-family: 'Roboto', sans-serif;
+  color: var(--color);
+}
+
+.container-black {
+  background-color: var(--background);
+}
+.container-yellow {
+  background-color: var(--background-color);
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+span {
+  color: var(--background-color);
+}
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 14px 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+button a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--background);
+}
+button:hover {
+  transform: scale(1.1);
+}
+.btn-sociais a {
+  color: var(--background-color);
+}
+.cabeçalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 95vh;
+  gap: 40px;
+  padding: 7rem;
+}
+.cabeçalho-titulo h1 {
+  font-size: 2.5rem;
+}
+.cabeçalho p {
+  font-size: 1.2rem;
+}
+/*cards*/
+.cards {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.cards h2 {
+  color: var(--background);
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 50px 0;
+}
+.cards-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.card {
+  display: flex;
+  background-color: var(--background);
+  width: 30rem;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 5rem 4rem;
+}
+.card h3 {
+  font-size: 2rem;
+  line-height: 40px;
+}
+.card p {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+/*trilhs*/
+.trilha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  padding: 3rem;
+}
+
+.trilha-informações h2 {
+  font-size: 5rem;
+}
+.trilha-informações p {
+  font-size: 1.25rem;
+  line-height: 50px;
+  margin-block: 40px;
+  width: 80%;
+}
+.trilha-informações button {
+  padding: 24px;
+}
+
+/* card inferior*/
+.detalhes-card {
+  padding: 4rem 12rem;
+}
+.detalhes-card_item {
+  margin: 15px;
+}
+.detalhes-card_questoes {
+  background-color: var(--background);
+  color: var(--color);
+  border-radius: 10px;
+  padding: 1.25rem 2rem;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+.detalhes-card_respostas {
+  background-color: var(--color);
+  color: var(--background);
+  border: 1px solid var(--background);
+  border-radius: 10px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+}
+
+/* rodapé*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 4rem;
+  font-size: 1.75rem;
+}
+.footer a {
+  color: var(--color);
+  font-size: 1.5rem;
+}
+.footer a:hover {
+  color: var(--background-color);
+}
+
+/* 2a pagina*/
+.mensagem {
+  background-image: url(assets/background.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 90vh;
+  padding: 7rem;
+}
+.mensagem h1 {
+  color: var(--background-color);
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.mensagem-paragrafo p {
+  font-size: 1.5rem;
+  margin: 30px;
+}
+.cards .h2 {
+  color: var(--color);
+  font-size: 2rem;
+}
+.back-yellow {
+  background-color: var(--background-color);
+  color: var(--background);
+  padding: 3rem;
+}
+.footer-comunidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+}
+.footer-comunidade h4 {
+  font-size: 3rem;
+  color: var(--background);
+  margin-bottom: 40px;
+}
+
+/*mobile */
+@media (width <= 768px) {
+  .cabeçalho {
+    height: 80vh;
+    padding: 2rem 2rem 0 2rem;
+  }
+  .cabeçalho img {
+    width: 80%;
+  }
+  .cabeçalho-titulo h1 {
+    font-size: 2rem;
+  }
+  .cards-grid {
+    padding-inline: 4rem;
+  }
+  .cards h2 {
+    font-size: 2rem;
+  }
+
+  .trilha {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trilha img {
+    width: 100%;
+  }
+  .trilha-informações {
+    align-self: center;
+  }
+
+  .trilha-informações h2 {
+    font-size: 2.5rem;
+  }
+  .trilha-informações p {
+    font-size: 1rem;
+  }
+  .trilha-informações button {
+    padding: 0.6rem;
+  }
+
+  .detalhes-card {
+    padding: 1.5rem;
+  }
+  .detalhes-card p {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .detalhes-card_questoes {
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
